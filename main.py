@@ -10,7 +10,7 @@ app1.config["SESSION_PERMANENT"] = False
 app1.config["SESSION_TYPE"] = "filesystem"
 Session(app1)
 
-con = sqlite3.connect("crimereportapp.db",check_same_thread=False)
+con = sqlite3.connect("crimereportapplication.db",check_same_thread=False)
 
 listOfTables1 = con.execute("SELECT name from sqlite_master WHERE type='table' AND name='CRIMES' ").fetchall()
 

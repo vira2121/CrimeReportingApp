@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Edit profile user</h1>
+<div class="container container">
+  <div class="row">
+    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-12 col-xxl-12">
+      <form action="" method="post">
+        <table class="table table-borderless">
+          <tr>
+            <td>enter old email</td>
+            <td><input name="oldem" class = "form-control" type="text"> </td>
+          </tr>
+          <tr>
+            <td>enter old password</td>
+            <td><input name="oldpass" class = "form-control" type="text"> </td>
+          </tr>
+          <tr>
+            <td> new Name</td>
+            <td><input name="newnam" class = "form-control" type="text"> </td>
+          </tr>
+          <tr>
+            <td>new mobile no</td>
+            <td><input name="newmob" class = "form-control" type="text"> </td>
+          </tr>
+          <tr>
+            <td>new email</td>
+            <td><input name="newem" class = "form-control" type="text"> </td>
+          </tr>
+          <tr>
+            <td>new address</td>
+            <td><input name="newadd" class = "form-control" type="text"> </td>
+          </tr>
+          <tr>
+            <td>new Password</td>
+            <td><input name="newpass" class = "form-control" type="text"> </td>
+          </tr>
+          <tr>
+            <td><button  class="btn btn-success"type = "submit" >Confirm Changes</button></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

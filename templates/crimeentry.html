@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Report crime User </h1>
+<div class="container container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-12 col-xxl-12">
+            <form action="" method="post">
+                <table class="table table-borderless">
+                    <tr>
+                        <td>Desciption</td>
+                        <td><input name="desc" class = "form-control" type="text"> </td>
+                    </tr>
+                    <tr>
+                        <td>Remarks</td>
+                        <td><input name="remark" class = "form-control" type="text"> </td>
+                    </tr>
+                        <tr>
+                        <td>Enter Date (DDMMYYYY format)</td>
+                        <td><input name="date" class = "form-control" type="text"> </td>
+                    </tr>
+                    <tr>
+                        <td><button  class="btn btn-success"type = "submit" >Report</button></td>
+                    </tr>
+                    </table>
+            </form>
+
+        </div>
+
+    </div>
+</div>
+{% endblock %}

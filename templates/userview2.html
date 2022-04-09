@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<h1> user view reported crimes </h1>
+<div class="container">
+    <div class="row">
+        <div class="col col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Description</th>
+                        <th scope="col">Remarks</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Reporter</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for i in crimes6 %}
+                    <tr>
+                        <th scope="row">{{i[1]}}</th>
+                            <td>{{i[2]}}</td>
+                            <td>{{i[3]}}</td>
+                            <td>{{i[4]}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
